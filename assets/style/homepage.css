@@ -1,0 +1,82 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+.carousel-caption h5 {
+    animation-name: kf1; /* thiết lập keyframe */
+    animation-duration: 1s; /* một chu trình điễn ra 3s */
+    animation-iteration-count: 1; /* lặp lại chu trình 1 lần */
+    height: 100px;
+    position: relative;
+    font-size: 50px;
+    color: greenyellow;
+    left: 0px;
+    top: -150px;
+}
+.carousel-caption p {
+    animation-name: kf2; /* thiết lập keyframe */
+    animation-duration: 1s; /* một chu trình điễn ra 3s */
+    animation-iteration-count: 1; /* lặp lại chu trình 1 lần */
+    height: 90px;
+    position: relative;
+    font-size: 100px;
+    color: orangered;
+    left: 0px;
+    top: -200px;
+}
+
+@keyframes kf1 {
+    from { /* thời điểm ban đầu của chu trình */
+        top: -500px;
+    }
+
+    to { /* thời điểm cuối của chu trình */
+        top: -150px;
+    }
+}
+@keyframes kf2 {
+    from { /* thời điểm ban đầu của chu trình */
+        left: -1000px;
+    }
+
+    to { /* thời điểm cuối của chu trình */
+        left: 0px;
+    }
+}
+
+/* start deal products */
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+/*end deal products */
