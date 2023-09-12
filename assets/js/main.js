@@ -35,6 +35,16 @@
     }
   });
 
+  // $(function () {
+  //     var includes = $('[data-include]')
+  //     $.each(includes, function () {
+  //       var file = $(this).data('include') + '.html'
+  //       $(this).load(file)
+  //       console.log(file)
+  //     })
+  // });
+
+
   // // HOME SLICK
   // $('#home-slick').slick({
   //   autoplay: true,

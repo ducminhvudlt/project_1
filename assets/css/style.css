@@ -472,6 +472,22 @@ textarea.input {
   transform: translate(0px, 0px);
 }
 
+.category-nav.hidden-on-click .category-list {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.category-nav.hidden-on-click .category-list.open {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate(0px, 15px);
+  -ms-transform: translate(0px, 15px);
+  transform: translate(0px, 15px);
+}
+
 .category-nav .category-list>li+li {
   border-top: 1px solid #DADADA;
 }
@@ -521,6 +537,10 @@ textarea.input {
 }
 
 .menu-nav .menu-list>li>a:hover, .menu-nav .menu-list>li>a:focus, .menu-nav .menu-list>li.dropdown.open>a {
+  color: #F8694A;
+}
+
+.menu-nav .menu-list>li>a:active {
   color: #F8694A;
 }
 
